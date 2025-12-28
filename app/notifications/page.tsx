@@ -76,8 +76,8 @@ export default function NotificationsPage() {
                             key={tab}
                             onClick={() => setActiveTab(tab)}
                             className={`pb-3 px-4 text-sm font-medium mr-4 transition-colors whitespace-nowrap ${activeTab === tab
-                                    ? "border-b-2 border-[#00365F] text-[#00365F]" // Actif : Bleu foncé
-                                    : "text-gray-500 hover:text-gray-700"
+                                ? "border-b-2 border-[#00365F] text-[#00365F]" // Actif : Bleu foncé
+                                : "text-gray-500 hover:text-gray-700"
                                 }`}
                         >
                             {tab}
@@ -122,8 +122,8 @@ export default function NotificationsPage() {
                                 {/* Partie Droite : Badge Type (Annonce ou Notification) */}
                                 <div className="ml-4 flex-shrink-0">
                                     <span className={`px-3 py-1 rounded-full text-xs font-medium ${notif.type === "Annonce"
-                                            ? "bg-orange-100 text-orange-700 border border-orange-200"
-                                            : "bg-blue-50 text-blue-700 border border-blue-100"
+                                        ? "bg-orange-100 text-orange-700 border border-orange-200"
+                                        : "bg-blue-50 text-blue-700 border border-blue-100"
                                         }`}>
                                         {notif.type}
                                     </span>
